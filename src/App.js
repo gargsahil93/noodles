@@ -4,8 +4,8 @@ import NoodleList from "./components/NoodlesList";
 import {BrowserRouter, Route} from "react-router-dom";
 import NoodleDetails from "./components/NoodleDetails";
 
-const NOODLES_API = 'http://s3-ap-southeast-1.amazonaws.com/he-public-data/TopRamen8d30951.json';
-const IMAGES_API = 'http://s3-ap-southeast-1.amazonaws.com/he-public-data/noodlesec253ad.json';
+const NOODLES_API = 'https://s3-ap-southeast-1.amazonaws.com/he-public-data/TopRamen8d30951.json';
+const IMAGES_API = 'https://s3-ap-southeast-1.amazonaws.com/he-public-data/noodlesec253ad.json';
 
 function App() {
     const [noodles, setNoodles] = useState([]);
