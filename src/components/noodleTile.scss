@@ -1,0 +1,14 @@
+.noodle-tile {
+  display: flex;
+  flex-direction: column;
+  border: black 1px solid;
+  border-radius: 5px;
+  width: 400px;
+  height: 430px;
+  margin: 20px;
+
+  .noodle-tile-img {
+    height: 300px;
+    width: 400px;
+  }
+}
