@@ -1,17 +1,15 @@
 import './noodleTile.scss';
+import { useHistory } from 'react-router-dom'
+import {columnKeys} from "./constants";
 
-const columnKeys = {
-    brand: 'Brand',
-    variety: 'Variety',
-    style: 'Style',
-    country: 'Country',
-    stars: 'Stars',
-    topTen: 'Top Ten',
-};
+
 
 const NoodleTile = ({ data, image }) => {
+    const history = useHistory();
     return (
-        <div className="noodle-tile">
+        <div className="noodle-tile" onClick={() => {
+            history.push(`/${data.key}`);
+        }}>
             <img src={image?.['Image'] || ''} alt="" className="noodle-tile-img"/>
             <div className="noodle-tile-header">{data[columnKeys.variety]}</div>
             <div className="noodle-tile-content">
